@@ -274,6 +274,23 @@ p {
   font-weight: bold;
 }
 
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  border: 1px solid #8a8a8a;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #8a8a8a;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none;
+}
+
 .review-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
