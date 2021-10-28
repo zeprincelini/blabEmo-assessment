@@ -7,13 +7,9 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.container {
-  padding: 10px 0px;
-}
-
 .nav-section {
   width: 100%;
-  height: 55px;
+  padding: 15px 0px;
   position: relative;
   z-index: 1;
   background-color: #ffffff;
@@ -452,4 +448,70 @@ input[type="submit"] {
   height: 50px;
   width: 180px;
   box-shadow: none;
+}
+
+.footer {
+  margin-top: 80px;
+  background-color: #1f2131;
+  padding: 50px 50px 5px 50px;
+}
+
+.footer a {
+  color: #fff;
+  opacity: 0.4;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  color: #fff;
+  font-size: 14px;
+  flex: 2;
+}
+
+.social-icons {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-list {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.links p {
+  margin: 0px;
+}
+
+.copyright {
+  display: flex;
+  margin-top: 50px;
+}
+
+.copyright p {
+  color: #ffffff;
+  opacity: 0.4;
+  font-size: 13px;
 }
