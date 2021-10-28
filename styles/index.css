@@ -239,7 +239,7 @@ input[type="search"]:focus {
   margin: 2px;
 }
 
-.hero-reviewer {
+.reviewer {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -252,4 +252,94 @@ input[type="search"]:focus {
 
 .details p:last-child {
   color: #bfbfbf;
+}
+
+.review-section {
+  width: 80%;
+  margin: 80px auto 0px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header h2,
+p {
+  margin: 2px;
+}
+
+.header p {
+  color: #8d8d8d;
+  font-size: 14px;
+}
+
+.header h2 {
+  font-weight: bold;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.review-card {
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.04);
+}
+
+.upper {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.review-rating p {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.review-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-label {
+  background: rgba(255, 102, 52, 0.05);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.review-label p {
+  color: #ff6634;
+  font-size: 12px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.mail p {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.lower {
+  background-color: #fcfcfc;
+  padding: 20px;
 }
