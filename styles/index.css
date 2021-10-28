@@ -423,3 +423,33 @@ input[type="submit"] {
   color: #c2c2c2;
   margin: auto;
 }
+
+.signup-section {
+  width: 65%;
+  margin: 50px auto 0px auto;
+  background-color: #ffebff;
+  border: 1px solid #ffebff;
+  border-radius: 8px;
+  background-image: url("../assets/shapes.png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: right;
+  padding: 50px 80px 50px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signup-text {
+  font-size: 19px;
+}
+
+.signup-button button {
+  background-color: #ff6634;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  height: 50px;
+  width: 180px;
+  box-shadow: none;
+}
