@@ -186,3 +186,10 @@ const changeHeroImage = () => {
     }, 500);
   }, 1000);
 };
+
+const menu_btn = document.querySelector(".menu");
+const mob_nav = document.querySelector(".mob-nav");
+
+menu_btn.addEventListener("click", () => {
+  mob_nav.classList.toggle("nav-toggle");
+});
