@@ -121,7 +121,7 @@ let reviews = [
   },
 ];
 
-document.querySelector(".review-grid").innerHTML = reviews
+const grid = reviews
   .map(
     (review) =>
       `<div class="review-card">
@@ -155,3 +155,34 @@ document.querySelector(".review-grid").innerHTML = reviews
     </div>`
   )
   .join("");
+
+const container = document.querySelectorAll(".review-grid");
+container.forEach((item) => (item.innerHTML = grid));
+
+let quote_container = document.querySelector(".hero-quote");
+let quote = document.querySelector(".quote");
+let hero = document.querySelector(".main-img");
+
+setTimeout(() => {
+  changeQuote();
+  changeHeroImage();
+}, 3000);
+
+const changeQuote = () => {
+  quote_container.classList.add("fade-out");
+  setTimeout(() => {
+    quote.innerHTML = `<p>If you are not willing to risk <br /> the usual
+        you will have to settle for <br /> the ordinary.</p>`;
+    quote_container.classList.remove("fade-out");
+  }, 1500);
+};
+
+const changeHeroImage = () => {
+  hero.classList.add("fade-out");
+  setTimeout(() => {
+    hero.src = "./assets/hero-2.png";
+    setTimeout(() => {
+      hero.classList.remove("fade-out");
+    }, 500);
+  }, 1000);
+};

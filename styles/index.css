@@ -56,6 +56,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1;
+}
+
 .hero-text {
   margin-left: 70px;
 }
@@ -125,6 +132,7 @@ input[type="search"]:focus {
   display: flex;
   gap: 5px;
   align-items: center;
+  margin-top: 15px;
 }
 
 .account p {
@@ -134,12 +142,12 @@ input[type="search"]:focus {
 .account a {
   text-decoration: none;
   color: #ff6634;
-  font-weight: bold;
 }
 
 .hero-quote {
   display: flex;
   margin-top: 70px;
+  transition: all 1s ease;
 }
 
 .quote {
@@ -159,6 +167,10 @@ input[type="search"]:focus {
 
 .hero-image {
   position: relative;
+}
+
+.main-img {
+  transition: all 1s ease;
 }
 
 .hero-rate {
